@@ -95,42 +95,50 @@ export const resources = [
   {
     title: "Python Docs",
     summary: "Official documentation for Python programming and language features.",
-    link: "https://docs.python.org/3/"
+    link: "https://docs.python.org/3/",
+    image: "/images/python.png"
   },
   {
     title: "React Docs",
     summary: "Official documentation for building user interfaces with React.",
-    link: "https://react.dev/"
+    link: "https://react.dev/",
+    image: "/images/react.png"
   },
   {
     title: "Ruby on Rails Guides",
     summary: "Official Rails guides for full-stack web development.",
-    link: "https://guides.rubyonrails.org/"
+    link: "https://guides.rubyonrails.org/",
+    image: "/images/rails.png"
   },
   {
     title: "RRC Polytech Coursework",
     summary: "Course materials, assignments, labs, and project work from the program.",
-    link: "#"
+    link: "#",
+    image: "/images/school.png"
   },
   {
     title: "YouTube",
     summary: "Video tutorials and practical walkthroughs for coding concepts.",
-    link: "https://www.youtube.com/"
+    link: "https://www.youtube.com/",
+    image: "/images/youtube.png"
   },
   {
     title: "LeetCode",
     summary: "Practice platform for problem solving and technical interview preparation.",
-    link: "https://leetcode.com/"
+    link: "https://leetcode.com/",
+    image: "/images/leetcode.png"
   },
   {
     title: "Stack Overflow",
     summary: "Developer community for troubleshooting and technical Q&A.",
-    link: "https://stackoverflow.com/"
+    link: "https://stackoverflow.com/",
+    image: "/images/stackoverflow.png"
   },
   {
     title: "GitHub",
     summary: "Code hosting, version control, collaboration, and project sharing.",
-    link: "https://github.com/"
+    link: "https://github.com/",
+    image: "/images/github.png"
   }
 ];
 

@@ -5,4 +5,5 @@ export interface ImgProps {
   height?: string;
   backgroundColor?: string;
   disabled?: boolean;
+  className?: string;
 }

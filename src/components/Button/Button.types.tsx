@@ -3,4 +3,6 @@ export interface ButtonProps {
   backgroundColor?: string;
   disabled?: boolean;
   onClick?: () => void;
+  color?: string;
+  border?: string;
 }

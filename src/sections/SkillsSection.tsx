@@ -1,5 +1,6 @@
 import { skills } from "../data/portfolioData";
 import Label from "../components/Label/Label";
+import Text from "../components/Text/Text";
 
 const SkillsSection = () => {
   return (
@@ -7,10 +8,18 @@ const SkillsSection = () => {
       <div className="container">
         <h2>Skills</h2>
 
+        <div className="skills__description">
+          <Text
+            text="I work with modern web technologies, databases, and tools to build practical full-stack applications."
+            size="14px"
+            color="#555"
+          />
+        </div>
+
         <div className="grid">
           {/* Languages */}
           <div className="card">
-            <h3>Languages & Technologies</h3>
+            <h3>Languages & Frameworks</h3>
             <div className="tags">
               {skills.languagesAndTechnologies.map((item) => (
                 <Label key={item} text={item} />

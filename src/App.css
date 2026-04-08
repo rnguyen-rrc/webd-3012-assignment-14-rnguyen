@@ -141,3 +141,52 @@ h2 {
   font-weight: bold;
   width: 200px;
 }
+
+.skills__description {
+  max-width: 620px;
+  margin-bottom: 24px;
+}
+
+.skills__description p {
+  line-height: 1.6;
+}
+
+#skills .card {
+  border-radius: 14px;
+  padding: 24px;
+  border: 1px solid #ececec;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+#skills .card::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  border-radius: 999px;
+  background: #111;
+  margin-bottom: 18px;
+}
+
+#skills h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+#skills .tags {
+  gap: 10px;
+}
+
+#skills .tag {
+  background: #f3f3f3;
+}
+
+.resource__image {
+  display: block;
+  margin: 0 auto 12px;
+}
+
+#resources .card {
+  text-align: center;
+}

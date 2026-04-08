@@ -4,6 +4,8 @@ import type { ButtonProps } from './Button.types';
 const StyledButton = styled.button<{
   $backgroundColor?: string;
   $disabled?: boolean;
+  $color?: string;
+  $border?: string;
 }>`
   padding: 10px 20px;
   border: none;
@@ -12,7 +14,8 @@ const StyledButton = styled.button<{
   cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'pointer')};
   background-color: ${({ $backgroundColor, $disabled }) =>
     $disabled ? '#ccc' : $backgroundColor || '#007bff'};
-  color: white;
+  color: ${({ $color }) => $color || '#fff'};
+  border: ${({ $border }) => $border || 'none'};
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -27,6 +30,8 @@ const StyledButton = styled.button<{
 const Button = ({
   label,
   backgroundColor,
+  color,
+  border,
   disabled = false,
   onClick,
 }: ButtonProps) => {
@@ -36,6 +41,8 @@ const Button = ({
       $disabled={disabled}
       disabled={disabled}
       onClick={onClick}
+      $color={color}
+      $border={border}
     >
       {label}
     </StyledButton>

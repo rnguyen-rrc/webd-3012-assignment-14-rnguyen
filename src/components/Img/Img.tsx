@@ -27,6 +27,7 @@ const StyledImg = styled.img<{
   width: ${({ $width }) => $width || '100%'};
   height: ${({ $height }) => $height || 'auto'};
   border-radius: 6px;
+  object-fit: contain;
 `;
 
 const Img = ({
@@ -36,12 +37,14 @@ const Img = ({
   height,
   backgroundColor,
   disabled = false,
+  className,
 }: ImgProps) => {
   return (
     <StyledWrapper
       $backgroundColor={backgroundColor}
       $disabled={disabled}
       aria-disabled={disabled}
+      className={className}
     >
       <StyledImg src={src} alt={alt} $width={width} $height={height} />
     </StyledWrapper>

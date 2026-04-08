@@ -45,7 +45,7 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                {}
+                {/* ACTIONS */}
                 <div className="card__actions">
                   <Button
                     label="View on GitHub"
