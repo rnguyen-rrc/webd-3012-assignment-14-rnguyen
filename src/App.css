@@ -1,42 +1,123 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.section {
+  padding: 30px 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  width: 100%;
+  padding: 0 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.meta {
+  font-size: 13px;
+  color: #777;
+  margin: 2px 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.hero__card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .card {
-  padding: 2em;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.read-the-docs {
-  color: #888;
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.tag {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
+  background: #eee;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.primary {
+  background: black;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid black;
+  color: black;
+}
+
+.hero__content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__content > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__text {
+  max-width: 550px;
+}
+
+.hero__image {
+  width: 260px;
+  border-radius: 12px;
+  display: block;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.table__label {
+  font-weight: bold;
+  width: 200px;
 }
