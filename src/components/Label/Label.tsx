@@ -1,28 +1,27 @@
-import styled from 'styled-components';
-import type { LabelProps } from './Label.types';
+import styled from "styled-components";
+import type { LabelProps } from "./Label.types";
 
-const StyledLabel = styled.label<{
+const StyledLabel = styled.span<{
   $backgroundColor?: string;
   $color?: string;
   $fontSize?: string;
   $disabled?: boolean;
 }>`
-  padding: 10px 20px;
-  border-radius: 6px;
   display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
 
-  font-size: ${({ $fontSize }) => $fontSize || '16px'};
+  font-size: ${({ $fontSize }) => $fontSize || "12px"};
 
   background-color: ${({ $backgroundColor, $disabled }) =>
-    $disabled ? '#ccc' : $backgroundColor || 'transparent'};
+    $disabled ? "#ccc" : $backgroundColor || "#f1f1f1"};
 
-  color: ${({ $color, $disabled }) => ($disabled ? '#666' : $color || '#000')};
+  color: ${({ $color, $disabled }) =>
+    $disabled ? "#666" : $color || "#333"};
+
+  white-space: nowrap;
 
   transition: all 0.2s ease-in-out;
-
-  @media (max-width: 600px) {
-    width: 100%;
-  }
 `;
 
 const Label = ({
@@ -31,11 +30,9 @@ const Label = ({
   backgroundColor,
   fontSize,
   disabled = false,
-  htmlFor,
 }: LabelProps) => {
   return (
     <StyledLabel
-      htmlFor={htmlFor}
       aria-disabled={disabled}
       $backgroundColor={backgroundColor}
       $color={color}

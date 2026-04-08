@@ -8,8 +8,6 @@ const StyledTable = styled.table<{
 }>`
   width: 100%;
   border-collapse: collapse;
-  display: block;
-  overflow-x: auto;
 
   background-color: ${({ $backgroundColor, $disabled }) =>
     $disabled ? '#ccc' : $backgroundColor || '#ffffff'};

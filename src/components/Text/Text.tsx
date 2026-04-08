@@ -1,43 +1,27 @@
-import styled from 'styled-components';
-import type { TextProps } from './Text.types';
+import styled from "styled-components";
 
 const StyledText = styled.p<{
-  $backgroundColor?: string;
+  $size?: string;
   $color?: string;
-  $fontSize?: string;
-  $disabled?: boolean;
+  $weight?: string;
 }>`
+  font-size: ${({ $size }) => $size || "14px"};
+  color: ${({ $color }) => $color || "#444"};
+  font-weight: ${({ $weight }) => $weight || "normal"};
+  line-height: 1.5;
   margin: 0;
-
-  font-size: ${({ $fontSize }) => $fontSize || '16px'};
-
-  background-color: ${({ $backgroundColor, $disabled }) =>
-    $disabled ? '#ccc' : $backgroundColor || 'transparent'};
-
-  color: ${({ $color, $disabled }) => ($disabled ? '#666' : $color || '#000')};
-
-  opacity: ${({ $disabled }) => ($disabled ? 0.6 : 1)};
-
-  @media (max-width: 600px) {
-    font-size: 14px;
-  }
 `;
 
-const Text = ({
-  text,
-  color,
-  backgroundColor,
-  fontSize,
-  disabled = false,
-}: TextProps) => {
+type TextProps = {
+  text: string;
+  size?: string;
+  color?: string;
+  weight?: string;
+};
+
+const Text = ({ text, size, color, weight }: TextProps) => {
   return (
-    <StyledText
-      aria-disabled={disabled}
-      $backgroundColor={backgroundColor}
-      $color={color}
-      $fontSize={fontSize}
-      $disabled={disabled}
-    >
+    <StyledText $size={size} $color={color} $weight={weight}>
       {text}
     </StyledText>
   );

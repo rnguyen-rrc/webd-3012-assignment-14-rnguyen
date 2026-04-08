@@ -1,4 +1,8 @@
 import { projects } from "../data/portfolioData";
+import Img from "../components/Img/Img";
+import Label from "../components/Label/Label";
+import Button from "../components/Button/Button";
+import Text from "../components/Text/Text";
 
 const ProjectsSection = () => {
   return (
@@ -9,33 +13,53 @@ const ProjectsSection = () => {
         <div className="grid">
           {projects.map((project) => (
             <div key={project.title} className="card">
-              <img src={project.image} alt={project.title} />
+
+              {/* IMAGE */}
+              <Img
+                src={project.image}
+                alt={project.title}
+                width="100%"
+              />
 
               <div className="card__content">
                 <h3>{project.title}</h3>
 
-                {/* ✅ FIXED META (split into 2 lines) */}
-                <p className="meta">{project.date}</p>
-                <p className="meta">{project.course}</p>
+                {/* META */}
+                <Text text={project.date} size="13px" color="#777" />
+                <Text text={project.course} size="13px" color="#777" />
 
-                <p>{project.description}</p>
+                {/* DESCRIPTION */}
+                <div className="card__description">
+                  <Text text={project.description} size="14px" color="#444" />
+                </div>
 
+                {/* TAGS */}
                 <div className="tags">
                   {project.tech.map((tech) => (
-                    <span key={tech} className="tag">
-                      {tech}
-                    </span>
+                    <Label
+                      key={tech}
+                      text={tech}
+                      backgroundColor="#f1f1f1"
+                      fontSize="12px"
+                    />
                   ))}
                 </div>
 
-                <a
-                  href={project.link !== "#" ? project.link : "https://github.com/"}
-                  className="btn primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View on GitHub
-                </a>
+                {}
+                <div className="card__actions">
+                  <Button
+                    label="View on GitHub"
+                    backgroundColor="#000"
+                    onClick={() =>
+                      window.open(
+                        project.link !== "#"
+                          ? project.link
+                          : "https://github.com/",
+                        "_blank"
+                      )
+                    }
+                  />
+                </div>
               </div>
             </div>
           ))}

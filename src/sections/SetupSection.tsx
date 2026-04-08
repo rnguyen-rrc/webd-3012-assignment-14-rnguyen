@@ -1,4 +1,9 @@
 import { developerSetup } from "../data/portfolioData";
+import Table from "../components/Table/Table";
+import TableRow from "../components/Table/TableRow";
+import TableCell from "../components/Table/TableCell";
+import TableHeader from "../components/Table/TableHeader";
+import TableHeaderCell from "../components/Table/TableHeaderCell";
 
 const SetupSection = () => {
   return (
@@ -6,16 +11,25 @@ const SetupSection = () => {
       <div className="container">
         <h2>Developer Setup</h2>
 
-        <table className="table">
+        <Table>
+          {/* HEADER */}
+          <TableHeader>
+            <TableRow>
+              <TableHeaderCell>Category</TableHeaderCell>
+              <TableHeaderCell>Details</TableHeaderCell>
+            </TableRow>
+          </TableHeader>
+
+          {/* BODY */}
           <tbody>
             {developerSetup.map((item) => (
-              <tr key={item.category}>
-                <td className="table__label">{item.category}</td>
-                <td>{item.details}</td>
-              </tr>
+              <TableRow key={item.category}>
+                <TableCell>{item.category}</TableCell>
+                <TableCell>{item.details}</TableCell>
+              </TableRow>
             ))}
           </tbody>
-        </table>
+        </Table>
       </div>
     </section>
   );
