@@ -1,19 +1,22 @@
 import './App.css';
-import HeroSection from './sections/HeroSection';
-import ProjectsSection from './sections/ProjectsSection';
-import SkillsSection from './sections/SkillsSection';
-import ResourcesSection from './sections/ResourcesSection';
-import SetupSection from './sections/SetupSection';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToHash from './components/ScrollToHash';
+
+import Navbar from './components/Navbar/Navbar';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
-    <>
-      <HeroSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ResourcesSection />
-      <SetupSection />
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <ScrollToHash />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
