@@ -1,4 +1,4 @@
-import { basicInfo } from "../data/portfolioData";
+import { basicInfo } from '../data/portfolioData';
 
 const HeroSection = () => {
   return (
@@ -6,7 +6,6 @@ const HeroSection = () => {
       <div className="container">
         <div className="hero__card">
           <div className="hero__content">
-
             {/* LEFT SIDE */}
             <div className="hero__text">
               <p className="eyebrow"></p>
@@ -33,7 +32,6 @@ const HeroSection = () => {
                 className="hero__image"
               />
             </div>
-
           </div>
         </div>
       </div>

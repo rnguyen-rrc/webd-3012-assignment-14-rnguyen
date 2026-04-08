@@ -7,6 +7,7 @@
 a. Copy folder '**webd-3012-assignment-13-rnguyen**' from previous assignment and create new folder named '**webd-3012-assignment-14-rnguyen**'
 
 b. Inside VS Studio Code, from terminal window, run following command to ensure the app runs successfully
+
 ```
 npm run dev
 ```

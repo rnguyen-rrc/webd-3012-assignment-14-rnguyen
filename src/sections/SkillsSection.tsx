@@ -1,6 +1,6 @@
-import { skills } from "../data/portfolioData";
-import Label from "../components/Label/Label";
-import Text from "../components/Text/Text";
+import { skills } from '../data/portfolioData';
+import Label from '../components/Label/Label';
+import Text from '../components/Text/Text';
 
 const SkillsSection = () => {
   return (
@@ -44,7 +44,7 @@ const SkillsSection = () => {
               {[...skills.toolsAndWorkflow, ...skills.domainKnowledge].map(
                 (item) => (
                   <Label key={item} text={item} />
-                )
+                ),
               )}
             </div>
           </div>

@@ -82,9 +82,7 @@ const HeroImage = ({
       <Overlay $backgroundColor={backgroundColor} $disabled={disabled} />
 
       <Content>
-        <Title style={{ fontSize: '42px', fontWeight: '700' }}>
-          {title}
-        </Title>
+        <Title style={{ fontSize: '42px', fontWeight: '700' }}>{title}</Title>
 
         <Subtitle style={{ fontSize: '18px', marginBottom: '20px' }}>
           {subtitle}

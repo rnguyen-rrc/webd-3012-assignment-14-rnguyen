@@ -1,8 +1,8 @@
-import { projects } from "../data/portfolioData";
-import Img from "../components/Img/Img";
-import Label from "../components/Label/Label";
-import Button from "../components/Button/Button";
-import Text from "../components/Text/Text";
+import { projects } from '../data/portfolioData';
+import Img from '../components/Img/Img';
+import Label from '../components/Label/Label';
+import Button from '../components/Button/Button';
+import Text from '../components/Text/Text';
 
 const ProjectsSection = () => {
   return (
@@ -13,13 +13,8 @@ const ProjectsSection = () => {
         <div className="grid">
           {projects.map((project) => (
             <div key={project.title} className="card">
-
               {/* IMAGE */}
-              <Img
-                src={project.image}
-                alt={project.title}
-                width="100%"
-              />
+              <Img src={project.image} alt={project.title} width="100%" />
 
               <div className="card__content">
                 <h3>{project.title}</h3>
@@ -52,10 +47,10 @@ const ProjectsSection = () => {
                     backgroundColor="#000"
                     onClick={() =>
                       window.open(
-                        project.link !== "#"
+                        project.link !== '#'
                           ? project.link
-                          : "https://github.com/",
-                        "_blank"
+                          : 'https://github.com/',
+                        '_blank',
                       )
                     }
                   />

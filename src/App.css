@@ -160,7 +160,7 @@ h2 {
 }
 
 #skills .card::before {
-  content: "";
+  content: '';
   display: block;
   width: 56px;
   height: 4px;

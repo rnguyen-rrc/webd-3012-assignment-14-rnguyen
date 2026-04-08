@@ -1,9 +1,9 @@
-import { developerSetup } from "../data/portfolioData";
-import Table from "../components/Table/Table";
-import TableRow from "../components/Table/TableRow";
-import TableCell from "../components/Table/TableCell";
-import TableHeader from "../components/Table/TableHeader";
-import TableHeaderCell from "../components/Table/TableHeaderCell";
+import { developerSetup } from '../data/portfolioData';
+import Table from '../components/Table/Table';
+import TableRow from '../components/Table/TableRow';
+import TableCell from '../components/Table/TableCell';
+import TableHeader from '../components/Table/TableHeader';
+import TableHeaderCell from '../components/Table/TableHeaderCell';
 
 const SetupSection = () => {
   return (
