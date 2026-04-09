@@ -20,12 +20,16 @@ const ProjectsSection = () => {
                 <h3>{project.title}</h3>
 
                 {/* META */}
-                <Text text={project.date} size="13px" color="#777" />
-                <Text text={project.course} size="13px" color="#777" />
+                <Text text={project.date} fontSize="13px" color="#777" />
+                <Text text={project.course} fontSize="13px" color="#777" />
 
                 {/* DESCRIPTION */}
                 <div className="card__description">
-                  <Text text={project.description} size="14px" color="#444" />
+                  <Text
+                    text={project.description}
+                    fontSize="14px"
+                    color="#444"
+                  />
                 </div>
 
                 {/* TAGS */}
