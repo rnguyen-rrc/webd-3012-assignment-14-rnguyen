@@ -1,7 +1,7 @@
 # ---------- Stage 1: Build ----------
 FROM node:20-alpine AS builder
 
-WORKDIR /nguyen_roline_ui_garden_build_checks
+WORKDIR /nguyen_roline_final_site
 
 COPY package*.json ./
 RUN npm ci
@@ -17,7 +17,7 @@ FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy built app
-COPY --from=builder /nguyen_roline_ui_garden_build_checks/dist /usr/share/nginx/html
+COPY --from=builder /nguyen_roline_final_site/dist /usr/share/nginx/html
 
 # Use default nginx port (80)
 EXPOSE 80
