@@ -11,7 +11,7 @@ const SkillsSection = () => {
         <div className="skills__description">
           <Text
             text="I work with modern web technologies, databases, and tools to build practical full-stack applications."
-            size="14px"
+            fontSize="14px"
             color="#555"
           />
         </div>
