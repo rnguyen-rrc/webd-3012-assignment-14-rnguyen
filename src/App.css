@@ -197,7 +197,7 @@ h2 {
   border-radius: 16px;
   padding: 32px;
   max-width: 750px;
-  margin: 0 auto;
+  margin: 50px auto;
 
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
@@ -233,11 +233,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* background: white; */
-  /* border-radius: 12px;
-  border: 1px solid #eee;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
 }
 
 .nav__logo {

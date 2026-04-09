@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   justify-content: center;
   padding: 20px 20px;
   background: #f3f3f3;
+  margin-top: 25px;
 `;
 
 const Card = styled.div`

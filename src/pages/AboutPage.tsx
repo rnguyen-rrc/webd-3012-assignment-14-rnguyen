@@ -30,15 +30,15 @@ const AboutPage = () => {
             jQuery, HTML, and MySQL, with a strong focus on building and
             maintaining CRM systems in clinical settings. My work goes beyond
             managing data — it’s about keeping workflows efficient, accurate,
-            and dependable.
+            and dependable so the practitioners can
           </p>
 
           <p>
-            One of my most meaningful projects was building{' '}
-            <strong>“Idea Hub”</strong>, a centralized platform for client
-            feedback and feature ideas. It was voted the top project in a
-            company hackathon and reflects how I approach development: listening
-            closely and building solutions that people actually use.
+            One of my most meaningful projects was building <i>“Idea Hub”</i>, a
+            centralized platform for client feedback and feature ideas. It was
+            voted the top project in a company hackathon and reflects how I
+            approach development: listening closely to clients' pain points and
+            building solutions that make their work easier.
           </p>
 
           <div className="about__cta">
