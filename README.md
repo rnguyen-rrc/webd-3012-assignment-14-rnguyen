@@ -47,19 +47,29 @@ git push -u origin main
 src/
 
 components/ # Reusable UI components
-
-   Button
-Card
-Dropdown
-HeroImage
-Img
-Label
-Navbar
-RadioButton
-ScrollToHash
-ScrollToTop
-Table
-Text
+   
+   - Button
+   - Card
+   - Dropdown
+   
+   - HeroImage
+   
+   - Img
+   
+   - Label
+   
+   - Navbar
+   
+   - RadioButton
+   
+   - ScrollToHash
+  
+   - ScrollToTop
+   
+   - Table
+   
+   - Text
+   
 sections/
 HeroSection.tsx #Displays the main introduction area with personal information and call-to-action buttons.
 Uses HeroImage component
