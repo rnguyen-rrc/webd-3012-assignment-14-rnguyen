@@ -43,36 +43,37 @@ git push -u origin main
 ```
 
 ### 3. Project Structure
-src/ 
-     components/ # Reusable UI components
-          Button
-          Card
-          Dropdown
-          HeroImage
-          Img
-          Label
-          Navbar
-          RadioButton
-          ScrollToHash
-          ScrollToTop
-          Table
-          Text
-     sections/
-          HeroSection.tsx #Displays the main introduction area with personal information and call-to-action buttons.
-            Uses HeroImage component
-          ProjectsSection.tsx #Showcases completed projects with details such as title, description, and related coursework.
-            Uses Img, Text, Button and Label component
-          ResourcesSection.tsx #Lists useful learning resources and references used throughout the program.
-            Uses Img, Button component
-          SetupSection.tsx #Lists useful learning resources and references used throughout the program.
-          Use Table component
-          SkillsSection.tsx #Highlights technical skills and technologies gained during the program.
-            Use Label, Text component
-     pages/ # Route-level pages 
-          AboutPage.tsx #Displays detailed information including background and experience.
-          HomePage.tsx #Displays detailed information about the developer, including background and experience.
-     data/ 
-          portfolioData.ts # Stores structured data such as personal info, projects, skills, and resources used across the app.
+
+src/
+components/ # Reusable UI components
+Button
+Card
+Dropdown
+HeroImage
+Img
+Label
+Navbar
+RadioButton
+ScrollToHash
+ScrollToTop
+Table
+Text
+sections/
+HeroSection.tsx #Displays the main introduction area with personal information and call-to-action buttons.
+Uses HeroImage component
+ProjectsSection.tsx #Showcases completed projects with details such as title, description, and related coursework.
+Uses Img, Text, Button and Label component
+ResourcesSection.tsx #Lists useful learning resources and references used throughout the program.
+Uses Img, Button component
+SetupSection.tsx #Lists useful learning resources and references used throughout the program.
+Use Table component
+SkillsSection.tsx #Highlights technical skills and technologies gained during the program.
+Use Label, Text component
+pages/ # Route-level pages
+AboutPage.tsx #Displays detailed information including background and experience.
+HomePage.tsx #Displays detailed information about the developer, including background and experience.
+data/
+portfolioData.ts # Stores structured data such as personal info, projects, skills, and resources used across the app.
 
 ### 4. Installed Required Tools (Prettier, ESLint version 8) if not installed yet
 
