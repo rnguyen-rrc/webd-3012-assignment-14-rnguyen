@@ -6,19 +6,26 @@ const FloatingWrapper = styled.div`
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 1000;
+  z-index: 9999;
 `;
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setVisible(window.scrollY > 200);
+    const checkScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      setVisible(scrollTop > 100);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', checkScroll);
+
+    // 👇 ALSO check once on load
+    checkScroll();
+
+    return () => window.removeEventListener('scroll', checkScroll);
   }, []);
 
   if (!visible) return null;
