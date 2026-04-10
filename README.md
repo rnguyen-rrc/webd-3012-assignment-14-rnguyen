@@ -45,8 +45,10 @@ git push -u origin main
 ### 3. Project Structure
 
 src/
+
 components/ # Reusable UI components
-Button
+
+   Button
 Card
 Dropdown
 HeroImage
