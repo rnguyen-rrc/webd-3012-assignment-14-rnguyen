@@ -42,7 +42,7 @@ e. Push your changes to GitHub using command
 git push -u origin main
 ```
 
-### 3. Installed Required Tools (Prettier, ESLint version 8)
+### 3. Installed Required Tools (Prettier, ESLint version 8) if not installed yet
 
 ```
 npm install -D prettier eslint@8 husky lint-staged @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-config-prettier
@@ -238,7 +238,7 @@ Runs npm ci to install dependencies cleanly
 Copies the rest of the project files
 Runs npm run build to generate a production-ready build (usually into a /dist folder)
 
-Goal: Compile your app into static files (HTML, CSS, JS)
+Goal: Compile the app into static files (HTML, CSS, JS)
 
 **Second stage (Production Server)**
 Uses a lightweight Nginx image (nginx:alpine)
@@ -255,7 +255,7 @@ b. **Create Docker Image**
 In VS Studio Code -> Terminal, from root folder, type the following command to create docker image:
 
 ```
-docker build -t nguyen_roline_coding_assignment13 .
+docker build -t nguyen_roline_coding_assignment14 .
 ```
 
 Type the following command to confirm the image has been created
@@ -269,7 +269,7 @@ c. **Create Docker Container**
 Type the following command to create docker container
 
 ```
-docker run -p 8018:80 --name nguyen_roline_coding_assignment13 nguyen_roline_coding_assignment13
+docker run -p 5575 :80 --name nguyen_roline_coding_assignment14 nguyen_roline_coding_assignment14
 ```
 
 Type the following command to verify docker container is running
@@ -283,7 +283,7 @@ d. **Confirm the app runs successfully using Docker**
 Go to browser, type the following URL to verify that the app can be run
 
 ```
-http://localhost:8018/
+http://localhost:5575/
 ```
 
 e. **Commit and push changes to Git**
@@ -298,8 +298,8 @@ git push
 **Notes**: Commands to start/stop container manually if needed
 
 ```
-docker start nguyen_roline_coding_assignment13
-docker stop nguyen_roline_coding_assignment13
+docker start nguyen_roline_coding_assignment14
+docker stop nguyen_roline_coding_assignment14
 ```
 
 npx prettier src/components/Button/Button.tests.tsx --write
