@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ScrollToHash from './components/ScrollToHash';
+import ScrollToHash from './components/ScrollToHash/ScrollToHash';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './pages/HomePage';
@@ -11,6 +12,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <ScrollToHash />
+
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<HomePage />} />
