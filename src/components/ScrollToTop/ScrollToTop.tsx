@@ -22,7 +22,7 @@ const ScrollToTop = () => {
 
     window.addEventListener('scroll', checkScroll);
 
-    // 👇 ALSO check once on load
+    // ALSO check once on load
     checkScroll();
 
     return () => window.removeEventListener('scroll', checkScroll);

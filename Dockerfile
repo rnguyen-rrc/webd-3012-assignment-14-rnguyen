@@ -19,6 +19,8 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy built app
 COPY --from=builder /nguyen_roline_final_site/dist /usr/share/nginx/html
 
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Use default nginx port (80)
 EXPOSE 80
 
